@@ -1,0 +1,105 @@
+:root
+{
+  --pureWhite: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+.App {
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1
+{
+  color: var(--pureWhite);
+}
+p{
+  color: var(--MediumGrey);
+}
+body
+{
+  background-color: var(--VeryDarkBlue);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 5% 2%;
+}
+main
+{
+  background-image:linear-gradient(rgb(34, 41, 51),rgb(23, 30, 40));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 1rem;
+  padding: 2rem ;
+  width: 375px;
+}
+.star
+{
+  width: 20px;
+  height: auto;
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: var(--DarkBlue);
+}
+.btn-container
+{
+  display: flex;
+  gap: 2rem;
+}
+.btn-container button
+{
+  padding: 1rem 20px;
+  border-radius:2rem;
+  color: var(--pureWhite);
+  background-color: var(--DarkBlue);
+  border:none;
+  font-weight: bold;
+}
+#submit
+{
+  margin: 20px 0;
+  padding: 1rem 140px;
+  border-radius: 2rem;
+  background-color: var(--Orange);
+  border: none;
+  color: var(--pureWhite);
+  font-weight: bolder;
+  font-size: larger;
+}
+#submit:hover
+{
+  color: var(--Orange);
+  background-color: var(--pureWhite);
+}
+.btn-container button:focus
+{
+  background-color: var(--Orange);
+}
+.sub
+{
+    background-image:linear-gradient(rgb(34, 41, 51),rgb(23, 30, 40));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 2rem ;
+    width: 375px;
+    gap: 20px;
+}
+.response , span
+{
+    color: var(--Orange);
+    background-color: var(--DarkBlue);
+    border-radius: 2rem;
+    padding: 10px;
+}
+
